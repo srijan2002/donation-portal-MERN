@@ -1,0 +1,97 @@
+.form-body{
+    height: 85%;
+    background-color: white;
+    margin:  auto;
+    width: 75%;
+    border-radius: 1.2em;
+    box-shadow: 0 0 25px rgb(190, 190, 190);
+    display: flex;
+}
+.form{
+    width: 60%; 
+    overflow: hidden;
+    overflow-y: scroll;
+    position: -webkit-sticky;
+    position: sticky;
+}
+.art{
+    width: 40%;
+    border-bottom-right-radius: 1.2em;
+    border-top-right-radius: 1.2em;
+    background-color: #a2dbe5;
+    display: flex;
+}
+.form-title{
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: x-large;
+    font-weight: bold;
+    color: #65d2e6;
+}
+.form-login{
+    margin-left: 10%;
+    margin-top: 6%;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+   
+  
+  .col-75 {
+    float: inline-end;
+    width: 75%;
+    margin-top: 6px;
+  }
+   
+  .row{
+      margin-left: 10%;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+   
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: small;
+    font-weight: 100;
+    color: rgb(59, 59, 59);
+  }
+  .input {
+    width: 80%;
+    /* padding: 12px; */
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 4px;
+    resize: vertical;
+    box-shadow: 0 0 7px #ccc;
+    padding: 2.5% 12px;
+    font-family: 'Montserrat', sans-serif;
+  }
+ .submit{
+  margin-top: 10%;
+   /* padding-left: 1em;padding-right: 1em; */
+   padding-top: 1em; padding-bottom: 1em;
+   background-color: #F7C375;
+   float: inline-end;
+   width: 64%;
+   text-align: center;
+   border-radius: 0.8em;
+   color: white;
+   font-weight: 700;
+ }
