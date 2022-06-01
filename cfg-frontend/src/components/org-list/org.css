@@ -1,0 +1,38 @@
+.title{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: larger;
+    font-weight: 600;
+    margin-bottom: 10%;
+}
+.card{
+    background-color: white;
+    border-radius: 1em;
+    margin: 1.2em;
+    display: flex;
+    flex-direction: column;
+}
+.card-name{
+    font-size: large;
+    font-weight: 700;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 0.6em;
+    padding-right: 1em;
+}
+.card-dist{
+    font-size: medium;
+    font-weight: 500;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+}
+.card-desc{
+    font-size: medium;
+    color: rgb(112, 112, 112);
+    font-weight: 300;
+    padding-left: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}

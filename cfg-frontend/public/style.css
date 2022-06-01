@@ -7,3 +7,6 @@
     border-radius: 8px;
  
  }
+body{
+   overflow-x: hidden;
+}
