@@ -1,14 +1,17 @@
 .title{
     margin-top: 5%;
     margin-left: 5%;
-    font-size: larger;
+    font-size: x-large;
     font-weight: 600;
     margin-bottom: 10%;
 }
 .card{
     background-color: white;
     border-radius: 1em;
-    margin: 1.2em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
     display: flex;
     flex-direction: column;
 }
@@ -35,4 +38,7 @@
     padding-top: 1.5em;
     padding-bottom: 1em;
     padding-right: 1em;
+}
+.link{
+    text-decoration: none;color: inherit;
 }

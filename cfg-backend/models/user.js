@@ -19,6 +19,11 @@ const userSchema = new Schema({
         type:String,
         required:[true,'*Password is required'],
         minlength:[6,'*Minimum 6 characters required']
+    },
+    contact:{
+        type:String,
+        required:[true,'*Contact is required'],
+        length:[10]
     }
 });
 

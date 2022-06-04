@@ -72,7 +72,7 @@ const Form = ({type}) => {
           </div>}
           <div className="row">
           <div className="col-25"> <label for="lname">Email Id</label></div>
-           <div className="col-75"><input type="text" id="email" name="lastname" placeholder="Your Email" className="input" onChange={(e) => setEmail(e.target.value)}></input></div>
+           <div className="col-75"><input type="text" id="email" name="lastname" placeholder="Your Email" className="input" onChange={(e) => {setEmail(e.target.value);console.log(e.target.value)}}></input></div>
           </div>
           <div className="row">
           <div className="col-25"> <label for="lname">Password</label></div>
