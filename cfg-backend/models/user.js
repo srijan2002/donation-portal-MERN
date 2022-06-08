@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const {isEmail}=require('validator');
 const bcrypt =require('bcrypt');
 const Schema=mongoose.Schema;
+const paymentSchema = require('./payment')
 
 const userSchema = new Schema({
     name:{
@@ -22,9 +23,10 @@ const userSchema = new Schema({
     },
     contact:{
         type:String,
-        required:[true,'*Contact is required'],
+        // required:[true,'*Contact is required'],
         length:[10]
-    }
+    },
+    payments:[paymentSchema]
 });
 
 userSchema.pre('save',async function(next){

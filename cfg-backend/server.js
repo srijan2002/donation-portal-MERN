@@ -6,6 +6,15 @@ const mongoose = require('mongoose');
 const cookie = require('cookie-parser');
 const routes = require('./routes/routes')
 var passport = require('passport');
+const cors = require('cors');
+const corsOptions ={
+    origin:'http://localhost:3000', 
+    credentials:true,            //access-control-allow-credentials:true
+    // methods:['GET','POST'],
+    // allowedHeaders:['Content-Type'],
+    optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
 app.use(express.static('public'));
 app.use(morgan('dev'));
 app.use(cookie());

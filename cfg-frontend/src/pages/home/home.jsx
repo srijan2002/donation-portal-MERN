@@ -5,7 +5,7 @@ import Org from '../../components/org-list/org';
 
 const Home = () => {
     return ( 
-     <div className="main-body">
+     <div className="home-body">
          <div className="nav">
              <Navigation/>
          </div>
