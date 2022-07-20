@@ -1,6 +1,7 @@
 import axios from 'axios';
 import './pay.css'
 import { useState} from 'react';
+require('dotenv').config()
 
 function loadScript(src) {
 	return new Promise((resolve) => {
@@ -53,8 +54,8 @@ const Pay = () => {
 
    const getPayment= async( payID)=>{
         var body = {
-            key:"rzp_test_pBr97twzdijv1J",
-            secret:"OvOCDUDLguYCOOvlvaYqr2EF",
+            key:process.env.KEY,
+            secret:process.env.SECRET,
             payid:payID, 
         };
         console.log(body);
@@ -80,8 +81,8 @@ const Pay = () => {
        
            
             var body = {
-                key:"rzp_test_pBr97twzdijv1J",
-                secret:"OvOCDUDLguYCOOvlvaYqr2EF",
+                key:process.env.KEY,
+                secret:process.env.SECRET,
                 amount: amount
                 
             };
@@ -99,7 +100,7 @@ const Pay = () => {
         }
 
 		const options = {
-			key:  'rzp_test_pBr97twzdijv1J' ,
+			key:  process.env.KEY ,
 			amount: amount,
 			order_id: data,
 			name: 'Donation',

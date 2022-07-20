@@ -23,7 +23,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(passport.initialize());
 let port = process.env.PORT || 3001;
 
-mongoose.connect('mongodb+srv://srijan:srijan2002@cfg-backend.xsdcp.mongodb.net/?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology:true})
+mongoose.connect(process.env.DB,{useNewUrlParser:true,useUnifiedTopology:true})
 .then((result)=>{app.listen(port);console.log(`Server Running on Port : ${port}`)}).catch((err)=>console.log(err));
 app.use(function (req, res, next) {
     //Enabling CORS
